@@ -97,12 +97,12 @@ functions:
 #      variable2: value2
 
 # you can add CloudFormation resource templates here
-resources:
-  Resources:
-    NewResource:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: data-dev-datalake1
+#esources:
+# Resources:
+#   NewResource:
+#     Type: AWS::S3::Bucket
+#     Properties:
+#       BucketName: data-dev-datalake1
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
