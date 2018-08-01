@@ -59,7 +59,7 @@ functions:
   flink1:
     name: data-dev-flink1
     handler: leon.S3FlattenJSONHandler::handler
-    role: data-dev-oam
+    role: arn:aws:iam::608606379460:role/data-dev-oam
     timeout: 300 # 5 mins
     memorySize: 512
 
