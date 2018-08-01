@@ -25,6 +25,9 @@ provider:
 #  stage: dev
   region: ap-southeast-2
 
+  deploymentBucket:
+    name: data-dev-datalake1
+
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
 #    - Effect: "Allow"
@@ -57,7 +60,7 @@ package:
 
 functions:
   flink1:
-    name: data-dev-flink1
+    name: data-dev-oam-flink1
     handler: leon.S3FlattenJSONHandler::handler
     role: arn:aws:iam::608606379460:role/data-dev-oam
     timeout: 300 # 5 mins
